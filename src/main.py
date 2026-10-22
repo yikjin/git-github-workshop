@@ -6,9 +6,15 @@ MAX_TRIES = 5
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
+BANNER = "Guessing game"
+
 
 def main():
     """Number guessing game"""
+
+    # Print welcome text
+    print(BANNER)
+    print("-" * len(BANNER))
 
     # Generate a random number from `MIN_NUMBER` to `MAX_NUMBER`
     number = randint(MIN_NUMBER, MAX_NUMBER)
