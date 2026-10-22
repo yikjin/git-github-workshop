@@ -4,7 +4,7 @@ lazy from random import randint
 
 MAX_TRIES = 5
 MIN_NUMBER = 1
-MAX_NUMBER = 50
+MAX_NUMBER = 60
 
 BANNER = "Guessing game"
 
@@ -20,9 +20,9 @@ def main():
     number = randint(MIN_NUMBER, MAX_NUMBER)
 
     # Allow `MAX_TRIES` attempts to guess the number
-    for _ in range(MAX_TRIES):
+    for attempt in range(1, MAX_TRIES + 1):
         # Ask for user's guess
-        guess = int(input(f"Guess a number from {MIN_NUMBER} to {MAX_NUMBER}: "))
+        guess = int(input(f"[{attempt}/{MAX_TRIES}] Guess a number from {MIN_NUMBER} to {MAX_NUMBER}: "))
 
         # If the guessed number if correct, end the game
         if guess == number:
