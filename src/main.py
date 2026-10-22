@@ -4,7 +4,7 @@ lazy from random import randint
 
 MAX_TRIES = 5
 MIN_NUMBER = 1
-MAX_NUMBER = 100
+MAX_NUMBER = 50
 
 BANNER = "Guessing game"
 
